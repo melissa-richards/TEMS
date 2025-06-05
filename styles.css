@@ -1,0 +1,30 @@
+.mainsection{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+
+body{
+    background-color: #3F84E5;
+
+}
+
+p{
+    font-weight: bold;
+    font-size:larger;
+    color: #415D43;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+button{
+    padding: 6rem;
+    background-color: #DBFEB8;
+    font-weight: bolder;
+    color: #3F84E5;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    border-radius: 30%;
+    border: none;
+    width: 8rem;
+    height: 4rem;
+}
