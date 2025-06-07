@@ -9,13 +9,9 @@ body {
     font-family: var(--font-primary);
     font-weight: 900;
     font-style: normal;
-    
     } 
 
-/* * {
-    overflow: hidden;
-    text-decoration: none;
-} */
+
 :root {
     --font-primary: "loos-extended", sans-serif;
     --red:  hsl(0, 0%, 100%);
@@ -26,7 +22,7 @@ body {
 
 a {
     text-decoration: none;
-  }
+}
 a:visited { 
     text-decoration: none; 
     color: white;
@@ -67,6 +63,7 @@ button{
     border: none;
     width: 8rem;
     height: 4rem;
+    text-decoration: none;
 } 
 
 /* styles for logo menu */
@@ -89,6 +86,7 @@ align-items: center;
 justify-content: center;
 background: transparent;
 transition: transform 0.15s ease-in-out;
+text-decoration: none;
 }
 
 .btn:hover,
@@ -100,6 +98,7 @@ width:  clamp(6rem, 18vw, 20rem);
 height: clamp(3.5rem, 10vw, 11rem);
 transform: rotate(-15deg);
 border-radius: 2rem;
+text-decoration: none;
 }
 
 .btn-alt {
@@ -107,10 +106,12 @@ background: var(--peach);
 width:  clamp(6rem, 18vw, 20rem);
 height: clamp(6rem, 18vw, 20rem);
 transform: rotate(45deg);
+text-decoration: none;
 }
 
 .btn-alt span {
 transform: rotate(-45deg);
+text-decoration: none;
 }
 
 .btn-create {
@@ -118,6 +119,7 @@ background: var(--blue);
 width:  clamp(8rem, 25vw, 26rem);
 height: clamp(8rem, 25vw, 26rem);
 border-radius: 50%;
+text-decoration: none;
 } 
 
 
