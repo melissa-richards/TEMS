@@ -5,11 +5,17 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background: #f3fff1;
+    background: #f6f7f2;
     font-family: var(--font-primary);
     font-weight: 900;
     font-style: normal;
+    
     } 
+
+/* * {
+    overflow: hidden;
+    text-decoration: none;
+} */
 :root {
     --font-primary: "loos-extended", sans-serif;
     --red:  hsl(0, 0%, 100%);
@@ -114,7 +120,7 @@ border-radius: 50%;
 
 
 
-/* sort */
+
 #sortable-container {
     display: flex;
     flex-direction: column;
@@ -126,10 +132,10 @@ border-radius: 50%;
   .item {
     padding: 20px;
     cursor: move;
-    border-radius: 35%;
+    border-radius: 2rem;
     border: none;
-    width: 10rem;
-    height: 10rem;
+    /* width: 10rem;
+    height: 10rem; */
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -137,7 +143,7 @@ border-radius: 50%;
   }
   
 
-  .back-arrow{
+  .back-arrow {
     position: absolute;
     top:0;
     right: 1rem;
@@ -165,7 +171,6 @@ border-radius: 50%;
     color: white;
     font-family: "loos-extended", sans-serif;
     font-weight: 900;
-   
     font-style: normal;
     padding: 1rem;
     margin: 1rem;
@@ -177,11 +182,11 @@ border-radius: 50%;
 
 
 /* Alt Learning */
-.ALTe-page{
+.nero-page{
     background-color:#0e0441;
   }
-.alte-page-container{
-    color: #bd2222;
+.nero-page-container{
+    color: #ee1d40;
     font-family: "loos-extended", sans-serif;
     font-weight: 900;
     background-color:#0e0441;
@@ -190,24 +195,69 @@ border-radius: 50%;
     margin: 1rem;
 }
 
-.ALTe{
-    color: #3f2525;
+.nero{
+    color:#ffd3db;
 }
 
-.alte-back-arrow{
-    color:#3f2525;
+.nero-wrapper {
+    padding: 2rem 0;
+}
+
+.nero-back-arrow{
+    color:#0e0441;
+}
+
+.nero-back-arrow:visited{
+    color:#0e0441;
 }
 
 .memo-homepage {
     z-index: 1;
     position: absolute;
     margin: 0 auto;
-    top: 0;
+    top: 20%;
     left:0;
-    width: 100%;
+    right:0;
     color: white;
     background-color:#0046ff;
     padding: 1rem;
     border-radius: 1rem;
-    text-align: center
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.memo-homepage p {
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+.enter{
+    border: white solid 2pt;
+    background-color:#0046ff;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+.enter:hover:after{
+    border: white solid 2pt;
+    background-color:white;
+    color:#0046ff;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.enter-btn {
+    display: flex;
+    justify-content: center;
+    color:#0046ff;
+}
+
+.enter-btn:hover:after {
+    display: flex;
+    justify-content: center;
+    color:#0046ff;
+}
+
+.memo-background{
+    background-color: #f6f7f2;
 }
