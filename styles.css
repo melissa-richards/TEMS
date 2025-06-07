@@ -24,7 +24,9 @@ body {
     --blue: #0046ff;
 } 
 
-
+a {
+    text-decoration: none;
+  }
 a:visited { 
     text-decoration: none; 
     color: white;
