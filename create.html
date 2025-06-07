@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ffb2awd.css">
+</head>
+<body>
+    <div class="back-arrow">
+        <a class="back-arrow" href="./index.html">&larr;</a>
+    </div>
+    <div class="mainsection" id="sortable-container">
+    
+    
+        <div>
+            <button class="item" id="createBtn">Create<p class="createBtn"></p></button>
+        </div>
+        <div>
+            <button class="item" id="evaluateBtn">Evaluate<p class="evaluateBtn"></p></button>
+        </div>
+        <div>
+            <button class="item"  id="analyzeBtn">Analyze<p class="analyzeBtn"></p></button>
+        </div>
+        <div>
+            <button class="item" id="applyBtn">Apply<p class="applyBtn"></p></button>
+        </div>
+        <div>
+            <button class="item" id="understandBtn">Understand<p class="understandBtn"></p></button>
+        </div>
+        <div>
+            <button class="item" id="rememberBtn">Remember<p class="rememberBtn" id="output"></p></button>
+        </div>
+        
+    </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+        <script>
+            new Sortable(document.getElementById("sortable-container"), {
+              animation: 150,
+            });
+        </script>
+    </body>
+</html>

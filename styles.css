@@ -1,30 +1,213 @@
-.mainsection{
+/* global styles */
+body {
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #f3fff1;
+    font-family: var(--font-primary);
+    font-weight: 900;
+    font-style: normal;
+    } 
+:root {
+    --font-primary: "loos-extended", sans-serif;
+    --red:  hsl(0, 0%, 100%);
+    --yellow: #ffd500;
+    --peach: #f72525;
+    --blue: #0046ff;
+} 
+
+
+a:visited { 
+    text-decoration: none; 
+    color: white;
+}
+
+
+/* styles for randomizer */
+.mainsection {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
     gap: 2rem;
-}
-
-body{
-    background-color: #3F84E5;
-
+    margin: 0 auto;
+    padding-top: 2rem;
 }
 
 p{
     font-weight: bold;
     font-size:larger;
-    color: #415D43;
-    font-family: "Lucida Console", "Courier New", monospace;
+    color: hsl(249, 100%, 44%);
+    font-family: "loos-extended", sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    font-style: normal;
 }
+
+
 button{
     padding: 6rem;
     background-color: #DBFEB8;
     font-weight: bolder;
     color: #3F84E5;
-    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-family: "loos-extended", sans-serif;
+    font-weight: 700;
+    font-style: bold;
     border-radius: 30%;
     border: none;
     width: 8rem;
     height: 4rem;
+} 
+
+/* styles for logo menu */
+
+.shape-bar {
+display: flex;
+align-items: center;
+gap: clamp(0.5rem, 2vw, 2.5rem);
+flex-direction:column;
+}
+
+.btn {
+border: none;
+padding: 0;
+cursor: pointer;
+color: var(--red);
+font-size: clamp(1.25rem, 4.5vw + 0.25rem, 6rem);
+display: flex;
+align-items: center;
+justify-content: center;
+background: transparent;
+transition: transform 0.15s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus-visible { transform: scale(1.04); }
+
+.btn-ctrl {
+background: var(--yellow);
+width:  clamp(6rem, 18vw, 20rem);
+height: clamp(3.5rem, 10vw, 11rem);
+transform: rotate(-15deg);
+border-radius: 2rem;
+}
+
+.btn-alt {
+background: var(--peach);
+width:  clamp(6rem, 18vw, 20rem);
+height: clamp(6rem, 18vw, 20rem);
+transform: rotate(45deg);
+}
+
+.btn-alt span {
+transform: rotate(-45deg);
+}
+
+.btn-create {
+background: var(--blue);
+width:  clamp(8rem, 25vw, 26rem);
+height: clamp(8rem, 25vw, 26rem);
+border-radius: 50%;
+} 
+
+
+
+/* sort */
+#sortable-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    margin-top: 5rem;
+  }
+  
+  .item {
+    padding: 20px;
+    cursor: move;
+    border-radius: 35%;
+    border: none;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+;
+  }
+  
+
+  .back-arrow{
+    position: absolute;
+    top:0;
+    right: 1rem;
+    font-weight: bold;
+    font-size:larger;
+    color: hsl(249, 100%, 44%);
+    font-family: "loos-extended", sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, -0.909rem + 14.55vw, 5rem);
+    font-style: normal;
+  }
+
+  .back-arrow:visited { 
+    text-decoration: auto; 
+    color: hsl(249, 100%, 44%);
+  }
+
+
+  /* Climate CTRL */
+  .CTRL-page{
+    background-color:#0046ff;
+  }
+.page-container{
+    background-color:#0046ff;
+    color: white;
+    font-family: "loos-extended", sans-serif;
+    font-weight: 900;
+   
+    font-style: normal;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.CTRL{
+    color: white;
+}
+
+
+/* Alt Learning */
+.ALTe-page{
+    background-color:#0e0441;
+  }
+.alte-page-container{
+    color: #bd2222;
+    font-family: "loos-extended", sans-serif;
+    font-weight: 900;
+    background-color:#0e0441;
+    font-style: normal;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.ALTe{
+    color: #3f2525;
+}
+
+.alte-back-arrow{
+    color:#3f2525;
+}
+
+.memo-homepage {
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left:0;
+    width: 100%;
+    color: white;
+    background-color:#0046ff;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center
 }

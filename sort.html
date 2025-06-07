@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Draggable Divs</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    #sortable-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 200px;
+    }
+
+    .item {
+      background-color: #cce5ff;
+      padding: 15px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      cursor: grab;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="sortable-container">
+    <div class="item">Item A</div>
+    <div class="item">Item B</div>
+    <div class="item">Item C</div>
+    <div class="item">Item D</div>
+  </div>
+
+  <!-- Load SortableJS -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <script>
+    new Sortable(document.getElementById("sortable-container"), {
+      animation: 150
+    });
+  </script>
+
+</body>
+</html>

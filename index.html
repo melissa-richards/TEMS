@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-<div class="mainsection">
+    <link rel="stylesheet" href="https://use.typekit.net/ffb2awd.css">
     
-
-    <div>
-        <button id="createBtn">Creating<p class="createBtn"></p></button>
+</head>
+<body>
+    <div class="index-menu-container">
+        <p class="memo-homepage"> Welcome to CTRL ALT CREATE! This is a resource sharing App for teachers to spread helpful tips and tools for creating a safe, accessible and inclusive environment in their classroom! Click on the shapes below to learn more.</p>
+     
+        <div class="shape-bar">
+            <button class="btn btn-ctrl"><a href="./control.html">CTRL</a></button>
+            <button class="btn btn-alt"><a href="./alt.html">ALT</a></button>
+            <button class="btn btn-create slideUp"><a href="./create.html">CREATE</a></button>
+        </div>
+          <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+        <script>
+            new Sortable(document.getElementById("sortable-container"), {
+              animation: 150,
+            });
+        </script>
+          
     </div>
-    <div>
-        <button id="evaluateBtn">Evaluating<p class="evaluateBtn"></p></button>
-    </div>
-    <div>
-        <button id="analyzeBtn">Analyzing<p class="analyzeBtn"></p></button>
-    </div>
-    <button id="applyBtn">Applying<p class="applyBtn"></p></button>
-    <button id="understandBtn">Understanding<p class="understandBtn"></p></button>
-    <button id="rememberBtn">Remembering<p id="output" class="rememberBtn"></p></button>
-</div>
-    <script src="script.js"></script>
 </body>
 
 </html>

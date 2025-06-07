@@ -74,22 +74,53 @@ function setupAnalyzeButton() {
 
 setupAnalyzeButton();
 
-   
 
+function setupApplyButton() {
+    const applyBtn = document.getElementById("applyBtn");
     const applyingVerbs = [
         "Adapt", "Apply", "Calculate", "Change", "Compute", "Demonstrate",
-        "Dramatize", "Draw", "Experiment", "Illustrate", "List", "Make", 
+        "Dramatize", "Draw", "Experiment", "Illustrate", "List", "Make",
         "Manipulate", "Practice", "Produce", "Sequence", "Show", "Teach", "Use"
     ];
 
+    applyBtn.addEventListener("click", () => {
+        const randomIndex = Math.floor(Math.random() * applyingVerbs.length);
+        const randomWord = applyingVerbs[randomIndex];
+        document.querySelector("p.applyBtn").textContent = randomWord;
+    });
+}
+setupApplyButton();
+
+
+function setupUnderstandButton() {
+    const understandBtn = document.getElementById("understandBtn");
     const understandingVerbs = [
         "Ask", "Calculate", "Convert", "Describe", "Discuss", "Explain", "Give examples",
         "Identify", "Locate", "Observe", "Recognize", "Report", "Research", "Retell",
         "Review", "Summarize", "Tell"
     ];
 
+    understandBtn.addEventListener("click", () => {
+        const randomIndex = Math.floor(Math.random() * understandingVerbs.length);
+        const randomWord = understandingVerbs[randomIndex];
+        document.querySelector("p.understandBtn").textContent = randomWord;
+    });
+}
+setupUnderstandButton();
+
+
+function setupRememberButton() {
+    const rememberBtn = document.getElementById("rememberBtn");
     const rememberingVerbs = [
         "Choose", "Cite", "Define", "Describe", "Give example", "Group", "Know",
         "Label", "List", "Listen", "Locate", "Match", "Memorize", "Name", "Quote",
         "Recall", "Recite", "Record", "Repeat", "Select", "State", "Underline"
     ];
+
+    rememberBtn.addEventListener("click", () => {
+        const randomIndex = Math.floor(Math.random() * rememberingVerbs.length);
+        const randomWord = rememberingVerbs[randomIndex];
+        document.querySelector("p.rememberBtn").textContent = randomWord;
+    });
+}
+setupRememberButton();
