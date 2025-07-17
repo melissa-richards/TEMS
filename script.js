@@ -31,12 +31,24 @@ function setupCreateButton() {
         const randomIndex = Math.floor(Math.random() * creatingVerbs.length);
         const randomWord = creatingVerbs[randomIndex];
         document.querySelector("p").textContent = `${randomWord}`;
+
     });
 }
 
 setupCreateButton();
 
+function setupCatcherButton() {
+    const catchBtn = document.getElementById("catchBtn");
+    const creatingCatch = [
+        "Maybe", "Not Today", "Some day", "lol", "Yep", "absolutely", "it's meant to be"
+    ];
 
+    catchBtn.addEventListener("click", ()=> {
+        const randomIndex = Math.floor(Math.random() * creatingCatch.length);
+        const randomWord = creatingcatch[randomIndex];
+        document.querySelector("p").textContent = `${randomWord}`;
+    })
+}
 
 function setupEvaluateButton() {
     const evaluateBtn = document.getElementById("evaluateBtn");
@@ -54,6 +66,19 @@ function setupEvaluateButton() {
 }
 
 setupEvaluateButton();
+
+
+function setupBackButton() {
+    const backButton = document.getElementByID("backButton");
+    const backOptions = [
+        "Maybe", "Not Today", "Some day", "lol", "Yep", "absolutely", "it's meant to be"
+    ];
+    backButton.addEventListener("click", ()=> {
+        const randomIndex = Math.floor(Math.random() * backOptions.length);
+        const randomWord = backOptions[randomIndex];
+        document.querySelector("p.backButton").textContent = `${randomWord}`;
+    });
+}
 
 
 function setupAnalyzeButton() {
